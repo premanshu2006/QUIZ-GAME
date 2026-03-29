@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1 id="quiz-title">Loading...</h1>
+      <p id="quiz-description">Please wait while quiz data loads.</p>
+    </header>
+
+    <main class="quiz-card" aria-live="polite">
+      <div id="question-container" class="hidden">
+        <div id="question-box" class="question"></div>
+        <div id="options" class="options"></div>
+      </div>
+
+      <div id="result-container" class="hidden">
+        <h2>Quiz Finished</h2>
+        <p id="final-score"></p>
+        <button id="restart-btn" class="btn">Play Again</button>
+      </div>
+
+      <div id="loading" class="loading">Loading quiz...</div>
+      <div id="error" class="error hidden"></div>
+    </main>
+
+    <footer>
+      <p>Score: <span id="score">0</span> / <span id="total">0</span></p>
+      <p>Question <span id="current-index">0</span> / <span id="question-count">0</span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
